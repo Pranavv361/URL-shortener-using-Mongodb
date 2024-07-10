@@ -5,46 +5,42 @@
 This project is a URL shortener service built with Node.js and MongoDB. It allows users to shorten long URLs, manage them, and redirect to the original URLs.
 
 ## Project Structure
-
-### Root Directory
-
 - **connect.js**: This file handles the connection to the MongoDB database.
 - **index.js**: The main entry point of the application. It sets up the Express server and middleware.
 
-### Folders
+## Folders
 
-#### controllers
+### 1. controllers
 
 This directory contains the controller files that handle the business logic for different routes.
 
 - **urlController.js**: Contains the logic for creating short URLs, redirecting to original URLs, and other URL-related operations.
 
-#### middleware
+### 2. middleware
 
 This directory contains middleware functions used in the application.
 
 - **auth.js**: Middleware for handling authentication and authorization.
-- **errorHandler.js**: Middleware for handling errors globally.
 
-#### models
+### 3. models
 
-This directory contains the Mongoose models representing the data structures in the MongoDB database.
+This directory contains the models used to store the data in MongoDB using mongoose library
 
 - **Url.js**: Mongoose model for URL documents, defining the schema for storing original and shortened URLs.
 
-#### routes
+### 4. routes
 
 This directory contains the route definitions for the application.
 
 - **urlRoutes.js**: Defines the API endpoints related to URL shortening and redirection.
 
-#### service
+### 5. service
 
-This directory contains service files that encapsulate the core functionality and business logic.
+This directory contains service files
 
 - **urlService.js**: Provides functions for creating short URLs, finding original URLs, and interacting with the database.
 
-#### views
+### 6. views
 
 This directory contains the view templates for rendering HTML responses.
 
